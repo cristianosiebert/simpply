@@ -174,15 +174,14 @@ onMounted(() => {
           <div class="col col-6 pl-64 pr-64">
             <h2 class="title">Você sabia?</h2>
             <p>
-              Cerca de 30% das empresas enfrentam desafios com a retenção e engajamento de funcionários devido à dificuldade em aprender e executar novas atividades. Além disso, erros operacionais podem custar até 5% do faturamento anual de uma empresa.
-            </p>
-            <br />
-            <p>
-              Além disso, erros operacionais na logística podem representar até 5% do faturamento anual de uma empresa, segundo a Associação Brasileira de Logística <i>(Abralog)</i>.
+              Cerca de 30% das empresas enfrentam desafios com a retenção e engajamento de funcionários devido à dificuldade em aprender e executar novas atividades.
             </p>
             <br />
             <p>
               Erros operacionais no setor de logística podem custar até 10% da receita anual das empresas, devido a falhas como atrasos e erros de manuseio.
+            </p>
+            <br />
+            <p>
               Essas falhas podem representar milhões de reais em perdas para grandes operações.
               Reduzir esses erros através de um treinamento prático e interativo como o proposto pelo Simpply tem potencial para oferecer um retorno financeiro significativo, além de reduzir custos operacionais.
             </p>
