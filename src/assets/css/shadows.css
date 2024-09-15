@@ -1,0 +1,6 @@
+.sombra {
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.24);
+}
+.sombra-interna {
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.16) inset;
+}

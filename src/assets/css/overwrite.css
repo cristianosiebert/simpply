@@ -1,0 +1,187 @@
+html, body {
+  background: var(--background) !important;
+  color: var(--black);
+}
+.p-button {
+  border-radius: 4px !important;
+  font-size: 0.8rem !important;
+  color: var(--black) !important;
+}
+.p-datatable-header-cell {
+  background: var(--white) !important;
+  height: 32px;
+}
+.p-datatable.p-datatable-sm .p-datatable-thead > tr > th {
+  padding: 0.4rem 0.8rem !important;
+}
+.p-datatable-header {
+  background: transparent !important;
+  border: none !important;
+}
+.p-datatable-table-container {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+.p-datatable-paginator-bottom { border-width: 0px !important; }
+.p-datatable-paginator-bottom .p-paginator { background: transparent; }
+.p-row-even,
+.p-dataview .p-dataview-content .container > .row:nth-child(even) {
+  background: var(--even) !important;
+}
+.p-row-even td, .p-row-odd td { padding: 8px 12px !important; }
+.p-row-odd,
+.p-dataview .p-dataview-content .container > .row:nth-child(odd) {
+  background: var(--odd) !important;
+}
+.p-dataview .p-dataview-content .container > .row:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+.p-datatable-column-sorted .p-datatable-column-title {
+  color: var(--table-title);
+}
+.p-datatable-column-title {
+  font-size: 0.8rem !important;
+}
+.p-datatable-column-sorted .p-datatable-sort-icon {
+  color: var(--sort-icon-active) !important;
+  width: 12px !important;
+  height: 12px !important;
+}
+.p-datatable-sort-icon,
+.p-datatable-column-filter-button {
+  width: 12px !important;
+  height: 12px !important;
+}
+.p-paginator { margin-top: 12px; }
+.p-paginator-page-selected {
+  background: var(--paginator) !important;
+  color: var(--black) !important;
+}
+.p-paginator-page{
+  color: var(--black) !important;
+  font-weight: 600;
+}
+.p-paginator-next:not(.p-disabled),
+.p-paginator-last:not(.p-disabled),
+.p-paginator-prev:not(.p-disabled),
+.p-paginator-first:not(.p-disabled) {
+  color: var(--black) !important;
+}
+.p-datatable-table-container {
+  height: calc(100vh - 12.4rem);
+  background: var(--white);
+  border-radius: 0px;
+}
+td {
+  font-size: 0.8rem;
+  padding-left: 0.8rem !important;
+}
+.p-inputtext {
+  border: none !important;
+  font-size: 0.8rem !important;
+}
+.p-inputtext::placeholder {
+  font-size: 0.8rem;
+}
+.p-datatable-filter-rule .p-inputtext {
+  border: 1px solid #cbd5e1 !important;
+}
+.p-chip { border-radius: 4px !important; }
+.p-chip-label {
+  font-weight: 600;
+  font-size: 0.7rem;
+}
+.p-paginator-rpp-dropdown { height: 32px; }
+.p-paginator-rpp-dropdown .p-select-label {
+  font-size: 0.8rem;
+  margin-top: -2px;
+}
+.no-datatable-header-padding-top .p-datatable-header {
+  padding-top: 0 !important;
+}
+.p-chip.small-chip {
+  padding: 4px 8px !important;
+}
+.p-datatable-row-selected,
+.linha-selecionada {
+  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.16) inset;
+  background: var(--container) !important;
+  color: var(--black) !important;
+}
+.p-inputtext.p-invalid {
+  border: 1px solid var(--error) !important;
+}
+a {
+  color: var(--black);
+  text-decoration: none;
+}
+a.underline-hover:hover {
+  text-decoration: underline !important;
+}
+.otp.p-inputotp .p-inputtext { height: 48px; }
+.p-fileupload > span { display: none; }
+.red-btn {
+  background: var(--error) !important;
+  border: 1px solid var(--error) !important;
+}
+.p-confirmpopup::before, .p-confirmpopup::after {
+  display: none !important;
+}
+.MicrosoftMap > div:first-child {
+  border-radius: 8px !important;
+}
+.fixed-pagination > .p-dataview-paginator-bottom {
+  position: fixed !important;
+  bottom: 16px;
+  border: none !important;
+}
+.fixed-pagination > .p-dataview-paginator-bottom > .p-paginator {
+  background: transparent !important;
+}
+.fixed-pagination > .p-dataview-content {
+  margin-bottom: 24px;
+}
+.p-dataview { border: none !important; }
+.p-avatar img { object-fit: cover !important; }
+table:has(.p-datatable-empty-message) {
+  height: 100% !important;
+}
+.p-tablist-tab-list {
+  background: var(--container-light) !important;
+}
+.p-tab-active {
+  color: var(--black) !important;
+  font-weight: 700 !important;
+  border-width: 0px 0px 4px 0px !important;
+}
+.p-tab {
+  color: var(--black) !important;
+}
+.p-drawer { background: var(--container-light) !important; }
+
+/*
+  Esse pedaço é pra alguns itens que vão sumir até segundo momento, como os botões de encadeamento de um mesmo filtro de coluna.
+*/
+div[data-pc-section="filteraddbuttoncontainer"],
+div[data-pc-name="pcfilterconstraintdropdown"],
+div[data-pc-name="pcfilteroperatordropdown"] {
+  display: none;
+}
+
+@media (max-height: 720px) {
+  .fixed-pagination > .p-dataview-paginator-bottom {
+    bottom: 10px !important;
+  }
+}
+
+@media (max-height: 590px) {
+  .fixed-pagination > .p-dataview-paginator-bottom {
+    bottom: 24px !important;
+  }
+}
+
+@media (max-height: 460px) {
+  .fixed-pagination > .p-dataview-paginator-bottom {
+    bottom: 20px !important;
+  }
+}

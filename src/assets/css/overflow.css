@@ -1,0 +1,6 @@
+.overflow-hide { overflow: hidden; }
+.overflow-auto { overflow: auto; }
+.overflow-x-hide { overflow-x: hidden; }
+.overflow-x-auto { overflow-x: auto !important; }
+.overflow-y-hide { overflow-y: hidden !important; }
+.overflow-y-auto { overflow-y: auto; }

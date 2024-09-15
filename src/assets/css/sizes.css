@@ -1,0 +1,46 @@
+.width100 { width: 100% !important; }
+.width98 { width: 98%; }
+.width75 { width: 75%; }
+.width60 { width: 60%; }
+.width40 { width: 40% !important; }
+.width50 { width: 50%; }
+.width25 { width: 25%; }
+.width20 { width: 20% !important; }
+.width0 { width: 0%; }
+.height100 { height: 100% !important; }
+.height80 { height: 80%; }
+.height75 { height: 75%; }
+.height50 { height: 50%; }
+.height40 { height: 40% !important; }
+.height25 { height: 25%; }
+.height20 { height: 20% !important; }
+.height0 { height: 0%; }
+
+.width100vh { width: 100vh; }
+.width90vh { width: 90vh; }
+.width75vh { width: 75vh; }
+.width50vh { width: 50vh; }
+.width25vh { width: 25vh; }
+.width0vh { width: 0vh; }
+.height100vh { height: 100vh; }
+.height90vh { height: 90vh; }
+.height88vh { height: 88vh; }
+.height88vhp8 { height: calc(88vh + 8px); }
+.height76vh { height: 76vh; }
+.height78vh { height: 78vh; }
+.height81vh { height: 81vh; }
+.height75vh { height: 75vh; }
+.height50vh { height: 50vh; }
+.height25vh { height: 25vh; }
+.height0vh { height: 0vh; }
+
+.w200px { width: 200px !important; }
+.w240px { width: 240px !important; }
+.w320px { width: 320px !important; }
+.sidew320px { width: calc(100% - 320px) !important; }
+.w360px { width: 360px !important; }
+.sidew360px { width: calc(100% - 360px) !important; }
+.w380px { width: 380px !important; }
+.sidew380px { width: calc(100% - 380px) !important; }
+.w400px { width: 400px !important; }
+.sidew400px { width: calc(100% - 400px) !important; }

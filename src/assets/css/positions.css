@@ -1,0 +1,40 @@
+.relative { position: relative !important; }
+.absolute { position: absolute !important; }
+.fixed { position: fixed !important; }
+.center {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.height-center { align-items: center; }
+.width-center {
+  justify-content: center;
+  text-align: center;
+}
+.left {
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+}
+.right {
+  align-items: flex-end;
+  justify-content: flex-end;
+  text-align: end;
+}
+.float-left { float: left !important; }
+.float-right { float: right !important; }
+.z-index-n1 { z-index: -1; }
+.z-index-0 { z-index: 0; }
+.z-index-1 { z-index: 10; }
+.z-index-2 { z-index: 20; }
+.z-index-3 { z-index: 30; }
+.z-index-4 { z-index: 40; }
+.z-index-5 { z-index: 50; }
+.z-index-6 { z-index: 60; }
+.z-index-7 { z-index: 70; }
+.z-index-8 { z-index: 80; }
+.z-index-9 { z-index: 90; }
+.z-index-10 { z-index: 100; }
+
+.right-n320 { right: -320px; }
+.right-0 { right: 0px; }

@@ -1,0 +1,68 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  padding: 8px;
+}
+
+.container-no-padding {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.row-no-margin { margin-bottom: 0px !important; }
+
+.col {
+  flex: 1;
+  padding: 10px;
+}
+
+.col-no-padding { flex: 1; }
+
+.col-1 { flex: 1; }
+.col-2 { flex: 2; }
+.col-3 { flex: 3; }
+.col-4 { flex: 4; }
+.col-5 { flex: 5; }
+.col-6 { flex: 6; }
+.col-7 { flex: 7; }
+.col-8 { flex: 8; }
+.col-9 { flex: 9; }
+.col-10 { flex: 10; }
+.col-11 { flex: 11; }
+.col-12 { flex: 12; }
+
+.custom-scroll,
+.p-datatable-table-container {
+  overflow-x: auto;
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: var(--scrollbar) transparent; /* For Firefox */
+
+  /* For WebKit browsers (Chrome, Safari) */
+  &::-webkit-scrollbar { height: 8px; }
+  &::-webkit-scrollbar-track { background: transparent; }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar);
+    border-radius: 10px;
+    border: 2px solid transparent;
+  }
+}
+
+.fold-left {
+  width: calc(100% - 320px);
+}
+
+.fold-right {
+  width: 320px;
+  border-left: 4px solid var(--white);
+}
