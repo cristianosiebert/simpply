@@ -186,6 +186,14 @@ onMounted(() => {
               Essas falhas podem representar milhões de reais em perdas para grandes operações.
               Reduzir esses erros através de um treinamento prático e interativo como o proposto pelo Simpply tem potencial para oferecer um retorno financeiro significativo, além de reduzir custos operacionais.
             </p>
+            <br />
+            <p>
+              E se houvesse uma solução que resolvesse esses problemas, mas também transformasse a maneira como sua equipe aprende e executa tarefas?
+              Imagine um treinamento que não só melhora a retenção e o engajamento, mas também reduz significativamente os erros operacionais.
+              Com o Simpply, você pode transformar esses desafios em oportunidades e alcançar resultados que antes pareciam inatingíveis.
+              Não deixe que a falta de inovação continue a custar caro à sua empresa.
+              Descubra como uma abordagem prática e interativa pode fazer toda a diferença!
+            </p>
           </div>
           <div class="col col-6 pl-64 pr-64">
             <img
