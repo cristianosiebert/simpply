@@ -76,7 +76,7 @@ onMounted(() => {
   }
 
   /* Menu ativo conforme a seção visível na página */
-  const sections = document.querySelectorAll('main section[id]')
+  const sections = document.querySelectorAll('main section[id]') as NodeListOf<HTMLElement>
   function activateMenuAtCurrentSection() {
     const checkpoint = window.pageYOffset + (window.innerHeight / 8) * 4
 
@@ -89,13 +89,15 @@ onMounted(() => {
       const checkpointEnd = checkpoint <= sectionTop + sectionHeight
 
       if (checkpointStart && checkpointEnd) {
-        document
-          .querySelector('nav ul li a[href*=' + sectionId + ']')
-          .classList.add('active')
+        const menuLink = document.querySelector('nav ul li a[href*=' + sectionId + ']')
+        if (menuLink) {
+          menuLink.classList.add('active')
+        }
       } else {
-        document
-          .querySelector('nav ul li a[href*=' + sectionId + ']')
-          .classList.remove('active')
+        const menuLink = document.querySelector('nav ul li a[href*=' + sectionId + ']')
+        if (menuLink) {
+          menuLink.classList.remove('active')
+        }
       }
     }
   }
