@@ -177,14 +177,14 @@ onMounted(() => {
       <!--Home-->
       <section class="section no-padding" id="home">
         <div class="width-100 relative">
-          <div class="video-background absoulte z-index-1 width100 hide-on-small-only">
+          <div class="video-background absoulte z-index-1 width100">
             <video autoplay muted playsinline id="background-video" class="width100">
               <source src="@/assets/video_promo.mp4" type="video/mp4">
               Seu navegador não suporta vídeos.
             </video>
           </div>
-          <div class="cortina absolute width100 height100" style="top: 0;"></div>
-          <div class="container grid absolute z-index-2 hero-card sombra">
+          <div class="cortina absolute width100 height100 hide-on-small-only" style="top: 0;"></div>
+          <div class="container grid absolute z-index-2 hero-card sombra hide-on-small-only">
             <!-- <div class="image">
               <img src="@/assets/images/pets.png" alt="Imagem 1" />
             </div> -->
