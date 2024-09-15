@@ -1,7 +1,47 @@
 <script setup lang="ts">
 import { onMounted } from 'vue';
 import logo from '@/assets/logo_svg.svg';
-//import ScrollReveal from 'scrollreveal';
+import 'vue3-carousel/dist/carousel.css'
+import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
+import image1 from '@/assets/1.png';
+import image2 from '@/assets/2.png';
+import image3 from '@/assets/3.png';
+import image4 from '@/assets/4.png';
+import image5 from '@/assets/5.png';
+import image6 from '@/assets/6.png';
+
+const images = [
+  {
+     url: image1,
+     title: 'Intuitivo.',
+     text: 'Acesse as simulações de forma organizada.',
+  },
+  {
+    url: image2,
+    title: 'Sempre com você.',
+    text: 'Conte com o tutor digital para compreender cada etapa do processo.',
+  },
+  {
+    url: image3,
+    title: 'Mão na massa.',
+    text: 'Além da teoria, você mesmo vai realizar um processo do começo ao fim.',
+  },
+  {
+    url: image4,
+    title: 'Oops.',
+    text: 'Aqui é um lugar seguro, se você errar, tudo bem. Vamos aprender e tentar de novo.',
+  },
+  {
+    url: image5,
+    title: 'Revise suas atividades.',
+    text: 'Você pode revisar se está tudo correto antes de prosseguir para a próxima etapa.',
+  },
+  {
+    url: image6,
+    title: 'Sucesso!',
+    text: 'Tenha o resumo do que aprendeu na simulação e prossiga para o próximo nível.',
+  },
+];
 
 const changeHeaderWhenScroll = (header:any, navHeight:any) => {
   if (window.scrollY >= navHeight) {
@@ -210,21 +250,31 @@ onMounted(() => {
 
      <!-- Produto -->
      <section class="section no-padding" id="produto" style="height: 800px;">
-      <div class="relative width100 height100">
-        <div class="absolute width100 height100">
-          &nbsp;
-        </div>
-        <div class="container grid absolute z-index-2 simulador-card sombra">
-          <!-- <div class="image">
-            <img src="@/assets/images/pets.png" alt="Imagem 1" />
-          </div> -->
-          <div class="text">
-            <h2 class="title">
-              Simulador de processos logísticos
-            </h2>
-            <p>Inserir aqui video do simulador</p>
-          </div>
-        </div>
+      <div class="absoulte z-index-1 width100 height100">
+        <carousel :items-to-show="1" class="height100">
+          <slide v-for="(slide, index) in images" :key="index" class="height100">
+            <div class="carousel__item">
+              <div id="carousel_img">
+                <img :src="slide.url" />
+              </div>
+              <div class="absolute z-index-2 simulador-card sombra"
+                style="top: 64px; right: 64px;"
+              >
+                <div class="text">
+                  <h2 class="title">
+                    {{ slide.title }}
+                  </h2>
+                  <p>{{ slide.text }}</p>
+                </div>
+              </div>
+            </div>
+          </slide>
+
+          <template #addons>
+            <navigation />
+            <pagination />
+          </template>
+        </carousel>
       </div>
      </section>
      <div class="divider-1"></div>

@@ -67,12 +67,14 @@ body {
 }
 
 .simulador-card {
-  top: 6rem;
-  right: 4rem;
   padding: 32px !important;
   max-width: 24rem !important;
   background: #fff;
   border-radius: 4px;
+}
+
+.carousel__viewport, .carousel__track {
+  height: 100%;
 }
 
 .title {
