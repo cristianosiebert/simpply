@@ -2,6 +2,10 @@
     .hide-on-small-only, .hide-on-small-and-down {
       display: none !important;
     }
+
+    .show-on-small-only, .show-on-small-and-down {
+      display: block !important;
+    }
   }
   
   @media (max-height: 592px) { .height100vh { height: 85vh; } }
