@@ -934,19 +934,7 @@ footer .social a:hover {
 /* medium devices: 767 > */
 @media (max-width: 768px) {
 
-  /* LOST */
-  .all-lost {
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 50vh;
-  }
-
-  /* ADOPTION */
-  .galeria {
-    grid-template-columns: repeat(1, 1fr);
-    grid-auto-rows: 50vh;
-  }
-
-  .container .galeria {
+  .container {
     margin: 0;
   }
 

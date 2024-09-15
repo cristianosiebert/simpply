@@ -177,7 +177,7 @@ onMounted(() => {
       <!--Home-->
       <section class="section no-padding" id="home">
         <div class="width-100 relative">
-          <div class="video-background absoulte z-index-1 width100">
+          <div class="video-background absoulte z-index-1 width100 hide-on-small-only">
             <video autoplay muted playsinline id="background-video" class="width100">
               <source src="@/assets/video_promo.mp4" type="video/mp4">
               Seu navegador não suporta vídeos.
@@ -210,7 +210,7 @@ onMounted(() => {
 
       <!-- Missão -->
       <section class="section" id="missao">
-        <div class="row">
+        <div class="row hide-on-small-only">
           <div class="col col-6 pl-64 pr-64">
             <h2 class="title">Você sabia?</h2>
             <p>
@@ -241,15 +241,42 @@ onMounted(() => {
             <img
               class="mt-n128"
               src="@/assets/flag_supply.png"
-              alt="Cãozinho e gatinho juntos"
             />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-12 pl-64 pr-64">
+            <h2 class="title">Você sabia?</h2>
+            <p>
+              Cerca de 30% das empresas enfrentam desafios com a retenção e engajamento de funcionários devido à dificuldade em aprender e executar novas atividades.
+            </p>
+            <br />
+            <p>
+              Erros operacionais no setor de logística podem custar até 10% da receita anual das empresas, devido a falhas como atrasos e erros de manuseio.
+            </p>
+            <br />
+            <p>
+              Essas falhas podem representar milhões de reais em perdas para grandes operações.
+              Reduzir esses erros através de um treinamento prático e interativo como o proposto pelo Simpply tem potencial para oferecer um retorno financeiro significativo, além de reduzir custos operacionais.
+            </p>
+            <br />
+            <p>
+              E se houvesse uma solução que resolvesse esses problemas, mas também transformasse a maneira como sua equipe aprende e executa tarefas?
+              Imagine um treinamento que não só melhora a retenção e o engajamento, mas também reduz significativamente os erros operacionais.
+            </p>
+            <br />
+            <p>
+              Com o Simpply, você pode transformar esses desafios em oportunidades e alcançar resultados que antes pareciam inatingíveis.
+              Não deixe que a falta de inovação continue a custar caro à sua empresa.
+              Descubra como uma abordagem prática e interativa pode fazer toda a diferença!
+            </p>
           </div>
         </div>
       </section>
       <div class="divider-2"></div>
 
      <!-- Produto -->
-     <section class="section no-padding" id="produto" style="height: 800px;">
+     <section class="section no-padding" id="produto">
       <div class="absoulte z-index-1 width100 height100">
         <carousel :items-to-show="1" class="height100">
           <slide v-for="(slide, index) in images" :key="index" class="height100">
@@ -257,7 +284,7 @@ onMounted(() => {
               <div id="carousel_img">
                 <img :src="slide.url" />
               </div>
-              <div class="absolute z-index-2 simulador-card sombra"
+              <div class="absolute z-index-2 simulador-card sombra hide-on-small-only"
                 style="top: 64px; right: 64px;"
               >
                 <div class="text">
