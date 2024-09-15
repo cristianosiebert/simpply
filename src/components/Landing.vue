@@ -177,7 +177,7 @@ onMounted(() => {
       <!--Home-->
       <section class="section no-padding" id="home">
         <div class="width-100 relative">
-          <div class="video-background absoulte z-index-1 width100">
+          <div class="video-background absoulte z-index-1 width100 hide-on-small-only">
             <video autoplay muted playsinline id="background-video" class="width100">
               <source src="@/assets/video_promo.mp4" type="video/mp4">
               Seu navegador não suporta vídeos.
@@ -244,7 +244,7 @@ onMounted(() => {
             />
           </div>
         </div>
-        <div class="row">
+        <div class="row show-on-small">
           <div class="col col-12 pl-64 pr-64">
             <h2 class="title">Você sabia?</h2>
             <p>
